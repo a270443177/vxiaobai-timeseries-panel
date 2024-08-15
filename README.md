@@ -10,7 +10,7 @@
 1. 下载Plane插件:
 
    ```bash
-   wget https://github.com/a270443177/temp-timeseries-panel/releases/download/3.0/vxiaobai-timeseries-panel.zip
+   wget https://github.com/a270443177/vxiaobai-timeseries-panel/releases/download/3.0/vxiaobai-timeseries-panel.zip
    ```
 2. 解压插件到grafana插件目录
 
