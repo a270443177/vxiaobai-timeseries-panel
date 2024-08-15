@@ -88,7 +88,7 @@ export const VizTooltipRow = ({
         setShowCopySuccess(true);
       }
     } catch (err) {
-      console.error('Unable to copy to clipboard', err);
+      
     }
 
     textarea.remove();
