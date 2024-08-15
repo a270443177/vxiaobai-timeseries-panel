@@ -17,12 +17,23 @@
       ```bash
    unzip -d vxiaobai-timeseries-panel vxiaobai-timeseries-panel.zip
    ```
+
+4. 修改grafana.ini配置文件
+
+      ```bash
+   
+   allow_loading_unsigned_plugins = vxiaobai-timeseries-panel
+
+   ```
+
 3. 重启grafana
       ```bash
    根据自行情况重启
 
    ```
-4. 重启grafana
+
+4. 面板选择
+
       ```bash
    选择面板为Time Series+
    ```
