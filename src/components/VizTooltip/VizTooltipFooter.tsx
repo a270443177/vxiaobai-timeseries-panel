@@ -75,7 +75,6 @@ const getStyles = (theme: GrafanaTheme2) => ({
   addLabel: css({
     borderTop: `1px solid ${theme.colors.border.medium}`,
     padding: theme.spacing(1),
-    width:`480px`,
     flexWrap: `wrap`,
     display: 'flex'
   })

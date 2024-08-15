@@ -165,10 +165,6 @@ export const getLabelsContentItems = (
     ) {
       continue;
     }
-    // in single mode, skip all but closest field
-    if (mode === TooltipDisplayMode.Single && seriesIdx !== i) {
-      continue;
-    }
 
     let dataIdx = dataIdxs[i];
 
