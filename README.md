@@ -15,7 +15,7 @@
 2. 解压插件到grafana插件目录
 
       ```bash
-   unzip -d vxiaobai-timeseries-panel vxiaobai-timeseries-panel.zip
+   unzip  vxiaobai-timeseries-panel.zip
    ```
 
 4. 修改grafana.ini配置文件
