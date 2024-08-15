@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Time Series+",
-  "id": "temp-timeseries-panel",
+  "id": "vxiaobai-timeseries-panel",
   "info": {
     "keywords": [
       "Labels/metadata",
