@@ -153,6 +153,7 @@ export const getLabelsContentItems = (
   let rows: LabelValue[] = [];
 
   let allNumeric = false;
+
   for (let i = 0; i < fields.length; i++) {
     const field = fields[i];
 
@@ -163,26 +164,27 @@ export const getLabelsContentItems = (
       field.config.custom?.hideFrom?.tooltip ||
       field.config.custom?.hideFrom?.viz
     ) {
+
       continue;
     }
 
     let dataIdx = dataIdxs[i];
-
-    if (dataIdxs.length < i) {
-      dataIdx = dataIdxs[0]
-    }
-    
     // omit non-hovered
     if (dataIdx == null) {
       continue;
     }
 
+
     if (!(field.type === FieldType.number || field.type === FieldType.boolean || field.type === FieldType.enum)) {
       allNumeric = false;
     }
 
-    const v = fields[i].values[dataIdx];
+    let v = fields[i].values[dataIdx];
+    if(fields[0].values[0] !== xField.values[0]){
+      v = fields[i].values[field.values.length - dataIdx - 1]
+    }
 
+  
     // no value -> zero?
     const display = field.display!(v); // super expensive :(
     // sort NaN and non-numeric to bottom (regardless of sort order)
@@ -201,6 +203,9 @@ export const getLabelsContentItems = (
       isActive: mode === TooltipDisplayMode.Multi && seriesIdx === i,
       numeric,
     });
+    
+
+
   }
   if (sortOrder !== SortOrder.None && rows.length > 1) {
     const cmp = allNumeric ? numberCmp : stringCmp;

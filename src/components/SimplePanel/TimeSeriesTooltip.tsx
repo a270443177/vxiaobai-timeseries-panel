@@ -50,7 +50,6 @@ export const TimeSeriesTooltip = ({
   const xField = seriesFrame.fields[0];
 
   const xVal = xField.display!(xField.values[dataIdxs[0]!]).text;
-
   const contentItems = getContentItems(
     seriesFrame.fields,
     xField,
@@ -60,11 +59,11 @@ export const TimeSeriesTooltip = ({
     sortOrder,
     (field) => field.type === FieldType.number
   );
-
+  
   let labelFieldsData: LabelValue[] = [];
   if(frames !== undefined && labelFields!== undefined){
     labelFieldsData = getLabelsContentItems(
-      frames![0].fields,
+      frames[0].fields!,
       xField,
       dataIdxs,
       seriesIdx,

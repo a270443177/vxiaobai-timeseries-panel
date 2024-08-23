@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "Time Series+",
+  "id": "vxiaobai-timeseries-panel",
+  "info": {
+    "keywords": [
+      "Labels/metadata",
+      "Labels/metadata on tooltips",
+      "Labels",
+      "tooltips"
+    ],
+    "description": "add Labels/metadata on tooltips",
+    "author": {
+      "name": "a270443177"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/a270443177"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/grafana-plugin-examples/examples/basic-panel/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "2.0.0",
+    "updated": "2024-08-23"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=10.3.3",
+    "plugins": []
+  }
+}
