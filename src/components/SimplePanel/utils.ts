@@ -7,12 +7,12 @@ import {
   isBooleanUnit,
   TimeRange,
   applyNullInsertThreshold,
-  nullToValue,
   LinkModel,
 } from '@grafana/data';
 import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@grafana/schema';
 import { buildScaleKey } from '@grafana/ui';
 import { convertFieldType } from './convertFieldType';
+import { nullToValue } from './nullToValue';
 
 type ScaleKey = string;
 
