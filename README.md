@@ -24,6 +24,11 @@
    
    allow_loading_unsigned_plugins = vxiaobai-timeseries-panel
 
+   
+   [feature_toggles]
+   #add below line
+   newVizTooltips = true
+
    ```
 
 3. 重启grafana
