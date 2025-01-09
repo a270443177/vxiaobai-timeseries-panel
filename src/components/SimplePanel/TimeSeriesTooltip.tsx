@@ -77,7 +77,9 @@ export const TimeSeriesTooltip = ({
 
   if (seriesIdx != null) {
     const field = seriesFrame.fields[seriesIdx];
-    const dataIdx = dataIdxs[seriesIdx]!;
+    //const dataIdx = dataIdxs[seriesIdx]!;
+    //sort by reserver
+    const dataIdx = field.values.length - 1 - dataIdxs[seriesIdx]!;
     links = getDataLinks(field, dataIdx);
   }
   const headerItem: LabelValue = {
