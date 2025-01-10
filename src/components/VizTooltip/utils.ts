@@ -168,7 +168,8 @@ export const getLabelsContentItems = (
       continue;
     }
 
-    let dataIdx = dataIdxs[i];
+    //same index per field
+    let dataIdx = dataIdxs[0];
     // omit non-hovered
     if (dataIdx == null) {
       continue;
